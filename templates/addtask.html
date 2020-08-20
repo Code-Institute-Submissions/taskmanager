@@ -2,19 +2,24 @@
 {% block content %}
 
 <h3>Add task</h3>
+
 <div class="row">
-    <form class="col s12">
+    <form action="" method="POST" class="col s12">
       <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">First Name</label>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">assignment</i>
+          <input id="task_name" name="task_name" type="text" class="validate">
+          <label for="icon_prefix">Task Name</label>
         </div>
-        <div class="input-field col s6">
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Telephone</label>
+          <textarea name="task_description" id="task_description" class="materialize-textarea" ></textarea>
+          <label for="subject">Task desciption</label>
         </div>
+      </div>
+      <div class="row">
       </div>
     </form>
   </div>
