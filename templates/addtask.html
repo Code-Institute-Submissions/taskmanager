@@ -3,7 +3,7 @@
 <h3>Add task</h3>
 
 <div class="row">
-  <form action="{{ url_for('task_task') }}" method="POST" class="col s12">
+  <form action="{{ url_for('insert_task') }}" method="POST"  class="col s12">
     <div class="row">
       <div class="input-field col s12">
       <i class="material-icons prefix">poll</i>
@@ -21,7 +21,7 @@
       <div class="input-field col s12">
         <i class="material-icons prefix">assignment</i>
         <input id="task_name" name="task_name" type="text" class="validate" />
-        <label for="icon_prefix">Task Name</label>
+        <label for="icon_prefix">Task name</label>
       </div>
     </div>
     <div class="row">
