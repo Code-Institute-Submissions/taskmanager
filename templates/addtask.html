@@ -6,6 +6,19 @@
   <form action="" method="POST" class="col s12">
     <div class="row">
       <div class="input-field col s12">
+      <i class="material-icons prefix">poll</i>
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
         <i class="material-icons prefix">assignment</i>
         <input id="task_name" name="task_name" type="text" class="validate" />
         <label for="icon_prefix">Task Name</label>
@@ -29,7 +42,7 @@
         <label for="icon_prefix">Due date</label>
       </div>
     </div>
-        <div class="row">
+    <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">time</i>
         <input id="due_time" name="due_time" type="text" class="timepicker" />
