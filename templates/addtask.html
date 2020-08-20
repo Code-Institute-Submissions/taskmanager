@@ -1,27 +1,44 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <h3>Add task</h3>
 
 <div class="row">
-    <form action="" method="POST" class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">assignment</i>
-          <input id="task_name" name="task_name" type="text" class="validate">
-          <label for="icon_prefix">Task Name</label>
-        </div>
+  <form action="" method="POST" class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="task_name" name="task_name" type="text" class="validate" />
+        <label for="icon_prefix">Task Name</label>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">phone</i>
-          <textarea name="task_description" id="task_description" class="materialize-textarea" ></textarea>
-          <label for="subject">Task desciption</label>
-        </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">phone</i>
+        <textarea
+          name="task_description"
+          id="task_description"
+          class="materialize-textarea"
+        ></textarea>
+        <label for="subject">Task desciption</label>
       </div>
-      <div class="row">
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">today</i>
+        <input id="due_date" name="due_date" type="text" class="datepicker" />
+        <label for="icon_prefix">Due date</label>
       </div>
-    </form>
-  </div>
+    </div>
+    <div class="row">
+      <div class="switch">
+        <label>
+          <input id="is_priority" name="is_priority" type="checkbox" />
+          <span class="lever"></span>
+          Priority
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
 
 {% endblock %}
