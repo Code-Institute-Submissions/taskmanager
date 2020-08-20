@@ -1,4 +1,8 @@
- .btn_small {
+*{
+font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.btn_small {
     height: 22px;
     width: 60px;
     line-height: 22px;
