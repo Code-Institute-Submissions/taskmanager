@@ -1,6 +1,10 @@
+<!-- Adds task in category -->
+
 {% extends 'base.html' %} {% block content %}
 
 <h3>Add task</h3>
+
+<!-- Insert task -->
 
 <div class="row">
 	<form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
@@ -16,7 +20,7 @@
 				<label>Task category</label>
 			</div>
 		</div>
-
+        <!-- Task name -->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">assignment</i>
@@ -24,6 +28,7 @@
 				<label for="icon_prefix">Task name</label>
 			</div>
 		</div>
+        <!-- Task description-->
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">info</i>
@@ -35,6 +40,7 @@
 				<label for="subject">Task description</label>
 			</div>
 		</div>
+        <!-- Calendar -->
 		<div class="row">
 			<div id="matfix" class="input-field col s12">
 				<i class="material-icons prefix">today</i>
@@ -43,6 +49,7 @@
 			</div>
 		</div>
 </div>
+<!-- Priority checkbox -->
 <div class="row">
 	<div class="switch">
 		<label>

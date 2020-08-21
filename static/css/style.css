@@ -1,7 +1,9 @@
+/* Universal font for this website */
 *{
 font-family: 'IBM Plex Sans', sans-serif;
 }
 
+/* Button styling */
 .btn_small {
     height: 22px;
     width: 60px;
@@ -9,7 +11,7 @@ font-family: 'IBM Plex Sans', sans-serif;
     margin: 5px 5px;
     padding: 0 0.5em;
 }
-
+/* Header margin */
 .task_header {
     margin-top: 5px;
 }
