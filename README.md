@@ -8,8 +8,10 @@ This is a task manager made primarily with Flask, using MongoDB as a database. T
 Users can:
 * Read tasks to be done
 * Add tasks to be done
+* Modify tasks
 * When adding tasks, users can choose a date, time and if the task is a priority.
 * Delete tasks 
+* Users can add, modify and delete categories
   
 ## Design  
 The design is simple and is in large, along with code borrowed from a tutorial created by Code Institute. The website uses a design language called Materialize, created by Google to allow "user experience across all their products on any platform".
