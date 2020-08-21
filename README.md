@@ -23,12 +23,30 @@ The design is simple and is in large, along with code borrowed from a tutorial c
   
 * Google developer tools have been used to simulate different screen sizes.
   
+* Debug was used during development to highlight and correct errors.
+  
+* CRUD functions have been manually tested, and the database has been checked to see if it received the correct input.
+
+### Code validation
+app.py was checked with PEP8 (http://pep8online.com/)  
+The check only returned errors of a superficial nature, no code errors.
+  
+CSS checked with https://jigsaw.w3.org/css-validator/
+No errors.
+  
+HTML checked with https://validator.w3.org/
+No errors related to code function.
+
+  
 ## Deployment
 The code is hosted and published on heroku (https://www.heroku.com), to do this I:
   
 * Signed up for an account with Heroku, created a new app with the name of 'owtaskmanager', the name has to be unique.
   
 * I linked my heroku account to my GitHub repository, this way I only had to push to one repo (GitHub being the primary) Heroku then copies, builds and then publishes the app automatically.
+  
+Repository: https://github.com/oyvindwagner/taskmanager
+Deployed website: https://owtaskmanager.herokuapp.com/
   
 ### Deploying locally
 To deploy locally, follow these steps:  
@@ -40,6 +58,7 @@ To deploy locally, follow these steps:
 * Change the current working directory to the location where you want the cloned directory to be made.
 * Type git clone, and then paste the URL you copied in Step 2. (git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 * Press Enter. Your local clone will be created.
+* Write "pip3 install -r requirements.txt" to install dependencies.
 * For further information on cloning repositories, see https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository.
   
  After this you need to add some environmental variables to create a local connection to the mongoDB database. Follow these steps:
@@ -49,6 +68,7 @@ To deploy locally, follow these steps:
  * os.environ["Variable Name Here"] = "Value of Variable Goes Here" 
  * Example: os.environ["SECRET_KEY"] = "ohsosecret" 
  * Specific variables are described under "Database connection" in this readme.
+ * The app should now run, using the command python3 app.py
   
 ## Databases
   
@@ -83,4 +103,7 @@ The "MONGO_DB" key is the name of the database. "MONGO_URI" is the connection st
   
 * "mongodb+srv://root:<password>@cluster0.lnran.mongodb.net/<dbname>?retryWrites=true&w=majority"
   
-You will have to add your password and database name in the string, under <password> and <dbname> respectfully. 
+You will have to add your password and database name in the string, under <password> and <dbname>.
+  
+## Notes
+The console returns one error, related to a calendar hotfix due to using an older version of Materialize that needs Jquery as a dependency. 
