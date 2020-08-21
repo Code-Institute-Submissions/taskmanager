@@ -55,7 +55,11 @@ def update_task(task_id):
         'is_priority': request.form.get('is_priority')
     })
     return redirect(url_for('get_tasks'))
-    
+
+@app.route('/delete_task/<task_id>')
+def delete_task(task_id):
+    mongo.db.tasks.remove({'_id': ObjectId(task_id)})
+    return redirect(url_for('get_tasks'))
 
 
 if __name__ == '__main__':
