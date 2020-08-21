@@ -109,3 +109,5 @@ You will have to add your password and database name in the string, under <passw
   
 ## Notes
 The console returns one error, related to a calendar hotfix due to using an older version of Materialize that needs Jquery as a dependency. 
+  
+This read me borrows a short tutorial on how to make local environmental variables from Code Institute.
